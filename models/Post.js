@@ -11,12 +11,15 @@ Post.init(
             primaryKey: true,
             autoIncrement: true,
           },
-          name: {
+          //title of the post
+          title: {
             type: DataTypes.STRING,
             allowNull: false,
           },
+          //information in post
           description: {
             type: DataTypes.STRING,
+            allowNull: false
           },
           date_created: {
             type: DataTypes.DATE,

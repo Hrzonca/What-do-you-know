@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tell Me What You Know</title>
+  {{!-- Add style sheets --}}
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+     
+      <nav class="navbar">
+        <ul>
+          <li class="li-inline nav-item"><a href="/">Home</a></li>
+          <li class="li-inline nav-iten"><a href="/dashboard">Dashboard</a></li>
+          <li class="li-inline nav-item"><a href="#" id="logout">Logout</a></li>
+        </ul>
+        </nav>
+
+     <header class="hero">
+    <h1 class="dashboard"><a href="/dashboard">Your Dashboard</a></h1>
+  </header>
+
+  <main class="container container-fluid mt-5">
+    {{{body}}}
+  </main>
+
+  <footer class="footer flex-row justify-center">
+    <a href="/dashboard/new">New Post</a> 
+  </footer>
+
+</body>
+</html>
+<script src="/public/js/logout.js"></script>

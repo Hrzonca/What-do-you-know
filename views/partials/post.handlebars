@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-title flex-row justify-space-between">
+        <h2>
+            {{!-- fix the route --}}
+            <a href="/">
+            <div class="col-8">{{Post.title}}</div>
+            </a>
+        </h2>
+        <div class="col-3">{{user.name}} on {{format_date date_created}}</div>
+    </div>
+    <p class="card-body">
+        {{Post.description}}
+    </p>
+</div>
